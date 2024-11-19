@@ -1,0 +1,114 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+html, body {
+    height: 100%;         /* Бүкіл экранды қамту үшін биіктікті орнатамыз */
+    margin: 0;            /* Дефолт маржаны алып тастау */
+    padding: 0;           /* Паддингті алып тастау */
+    overflow-x: hidden;   /* Горизонталды прокруткаға тыйым салу (қажет болса) */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    overflow: auto;       /* Бұл параметр вертикалды және горизонталды прокрутка қосады */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    /* Визуалды биіктікті толтырады */
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;         /* Бұл бөлімнің қалған орынды толтыруына мүмкіндік береді */
+    padding: 20px;
+}
+
+window.addEventListener("wheel", function(event) {
+    event.preventDefault(); // Бұл код айналдыруды бұғаттайды, бірақ оны алып тастау керек
+}, { passive: false });
+
+#useful-links {
+    display: block;       /* Бөлімнің көрсетілуін қамтамасыз етеді */
+    visibility: visible;  /* Егер бұрын көрінбейтін болса, оны қайта көрсетеді */
+    opacity: 1;           /* Бөлімнің көріну деңгейі */
+    margin-top: 20px;     /* Жоғары жағынан арақашықтық */
+    padding: 10px;        /* Ішкі арақашықтық */
+}
+
+#useful-links ul {
+    list-style-type: none; /* Тізімді жою (немесе қажетті стильді таңдаңыз) */
+    padding: 0;
+}
+
+#useful-links a {
+    text-decoration: none; /* Сілтемелердің астын сызуды алып тастайды */
+    color: #0077cc;         /* Сілтемелердің түсі */
+}
+
+#useful-links a:hover {
+    text-decoration: underline; /* Сілтеме үстіне келгенде астын сызу */
+}
